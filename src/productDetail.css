@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.allGotBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    justify-content: start;
+    padding: 50px;
+}
+
+.gotImgPart {
+    width: 50%;
+    height: 500px;
+    border-radius: 48px;
+    /* border: 2px solid gray;
+            border: none;
+ */
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.gotInfoPart {
+    width: 40%;
+    border-radius: 24px;
+    display: flex;
+    height: auto;
+    align-items: start;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    gap: 25px;
+
+    h2 {
+        color: aliceblue;
+        width: auto;
+        padding-bottom: 30px;
+        letter-spacing: 8px;
+        font-weight: lighter;
+        border-bottom: 1px solid gray;
+        font-size: 25px;
+    }
+
+
+    p {
+        font-weight: lighter;
+        width: auto;
+        padding-bottom: 30px;
+        border-bottom: 1px solid gray;
+        color: aliceblue;
+        font-size: 23px;
+        letter-spacing: 8px;
+
+    }
+
+    span {
+        font-weight: lighter;
+        border-bottom: 1px solid gray;
+        color: aliceblue;
+        padding-bottom: 10px;
+        width: auto;
+        font-size: 30px;
+    }
+}
+
+
+.bigInfoP {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    color: aliceblue;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+.starsBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: start;
+}
+.starsBox svg:first-child{
+    color: rgb(223, 223, 53);
+}
+.starsBox svg:nth-child(2){
+    color: rgb(223, 223, 53);
+}
+.starsBox svg:nth-child(3){
+    color: rgb(223, 223, 53);
+}
+.starsBox svg:nth-child(4){
+    color: rgb(99, 99, 95);
+}
+.starsBox svg:last-child{
+        color: rgb(99, 99, 95);
+}
+@media (min-width: 1250px){
+    .allGotBox{
+        padding: 15px 25px;
+    }
+    .gotInfoPart {
+        width: 40%;
+    
+        h2 {
+            padding-bottom: 25px;
+            letter-spacing: 6px;
+            font-size: 20px;
+        }
+    
+    
+        p {
+            padding-bottom: 25px;
+            font-size: 19px;
+            letter-spacing: 6px;
+    
+        }
+    
+        span {
+            padding-bottom: 8px;
+            font-size: 26px;
+        }
+    }
+    .bigInfoP{
+        font-size: 15px;
+    }
+    .gotAddCartBtn{
+        border-radius: 12px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px){
+    .allGotBox{
+        padding: 10px 20px;
+        margin-bottom: 0%;
+    }
+    .gotInfoPart {
+        width: 50%;
+    
+        h2 {
+            padding-bottom: 20px;
+            letter-spacing: 6px;
+            font-size: 17px;
+        }
+    
+    
+        p {
+            padding-bottom: 20px;
+            font-size: 17px;
+            letter-spacing: 6px;
+    
+        }
+    
+        span {
+            padding-bottom: 8px;
+            font-size: 23px;
+        }
+    }
+    .bigInfoP{
+        font-size: 13px;
+    }
+    .gotAddCartBtn{
+        border-radius: 12px;
+    }
+    .gotImgPart{
+        height: auto;
+        width: 50%;
+        border: none;
+        border-radius: 16px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .allGotBox{
+        padding: 10px 20px;
+        margin-bottom: 0%;
+    }
+    .gotInfoPart {
+        width: 60%;
+    
+        h2 {
+            padding-bottom: 20px;
+            letter-spacing: 6px;
+            font-size: 15px;
+        }
+    
+    
+        p {
+            padding-bottom: 20px;
+            font-size: 15px;
+            letter-spacing: 6px;
+    
+        }
+    
+        span {
+            padding-bottom: 8px;
+            font-size: 20px;
+        }
+    }
+    .bigInfoP{
+        font-size: 14px;
+    }
+    .gotAddCartBtn{
+        border-radius: 12px;
+    }
+    .gotImgPart{
+        height: auto;
+        width: 40%;
+        border-radius: 16px;
+        border: none;
+
+    }
+}
+
+@media (min-width: 552px) and (max-width: 768px){
+    .allGotBox{
+        padding: 50px 20px;
+        margin-bottom: 0%;
+        flex-direction: column;
+    }
+    .gotInfoPart {
+        width: 100%;
+    
+        h2 {
+            padding-bottom: 20px;
+            letter-spacing: 6px;
+            font-size: 14px;
+        }
+    
+    
+        p {
+            padding-bottom: 20px;
+            font-size: 14px;
+            letter-spacing: 6px;
+    
+        }
+    
+        span {
+            padding-bottom: 8px;
+            font-size: 18px;
+        }
+    }
+    .bigInfoP{
+        font-size: 13px;
+    }
+    .gotAddCartBtn{
+        border-radius: 12px;
+    }
+    .gotImgPart{
+        height: auto;
+        width: 60%;
+        border-radius: 14px;
+    }
+}
+
+
+@media (min-width: 332px) and (max-width: 552px){
+    .allGotBox{
+        padding: 50px 20px;
+        margin-bottom: 0%;
+        flex-direction: column;
+    }
+    .gotInfoPart {
+        width: 100%;
+        padding: 25px;
+    
+        h2 {
+            padding-bottom: 20px;
+            letter-spacing: 6px;
+            font-size: 14px;
+        }
+    
+    
+        p {
+            padding-bottom: 20px;
+            font-size: 14px;
+            letter-spacing: 6px;
+    
+        }
+    
+        span {
+            padding-bottom: 8px;
+            font-size: 18px;
+        }
+    }
+    .bigInfoP{
+        font-size: 13px;
+    }
+    .gotAddCartBtn{
+        border-radius: 12px;
+    }
+    .gotImgPart{
+        height: auto;
+        width: 100%;
+        border-radius: 14px;
+        border: none;
+    }
+}

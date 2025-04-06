@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.allTrendingBox {
+    width: 100%;
+    height: auto;
+    /* background-color: #141414; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 0 50px 0;
+    flex-direction: column;
+    a{
+        text-decoration: none;
+    }
+
+}
+
+.trendingTitle {
+    width: 100%;
+    height: 100%;
+
+    p {
+        font-weight: lighter;
+        font-size: 35px;
+        color: aliceblue;
+    }
+}
+
+.trendingProdsPart {
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    &:hover .mainTrendingProd {
+        filter: blur(3px);
+
+        &:hover {
+            transform: translateY(-5px);
+            border-color: white;
+            filter: blur(0px);
+        }
+    }
+}
+
+.mainTrendingProd {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    background-color: #1f1f1f;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid rgb(99, 98, 98);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.692), inset 0 0 120px rgb(0, 0, 0);
+    transition: .4s;
+    &:hover{
+        .cartAddBox{
+            display: flex;
+        }
+    }
+}
+
+.mainTrendingProd[style*="--internalSSD: true"] {
+    /* background-color: red; */
+    position: relative;
+}
+
+.mainTrendingProd[style*="--internalSSD: true"]::before {
+    width: 150px;
+    height: auto;
+    padding: 4px;
+    background-color: transparent;
+    color: rgb(190, 180, 180);
+    content: 'interna lSSD';
+    position: absolute;
+    top: 0%;
+    z-index: 565666565656;
+    left: 10px;
+}
+
+.mainTrendingProd[style*="--extrenalSSD: true"] {
+    /* background-color: red; */
+    position: relative;
+}
+
+.mainTrendingProd[style*="--extrenalSSD: true"]::before {
+    width: 150px;
+    height: auto;
+    padding: 4px;
+    background-color: transparent;
+    color: rgb(190, 180, 180);
+    content: 'extrenal SSD';
+    position: absolute;
+    top: 0%;
+    z-index: 565666565656;
+    left: 10px;
+}
+
+.imgPart {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    background-color: transparent;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.infoPart {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    justify-content: start;
+    flex-direction: column;
+
+    h2 {
+        color: aliceblue;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
+    p {
+        color: aliceblue;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+
+    span {
+        color: aliceblue;
+        font-size: 17px;
+        font-weight: lighter;
+    }
+}
+
+.typePart {
+    width: 100%;
+    height: 30px;
+    color: gray;
+    z-index: 5;
+    font-family: 18px;
+    display: flex;
+    top: 0%;
+    left: 0;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    padding-left: 10px;
+}
+
+.trendingBoxHeader {
+    width: 100%;
+    height: 50px;
+    z-index: 88888888888888888;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 55px;
+
+}
+
+.trendingBtns {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    button {
+        width: 120px;
+        height: auto;
+        padding: 3px 6px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+        justify-content: center;
+        border: none;
+        background-color: transparent;
+        font-weight: lighter;
+        color: aliceblue;
+
+        &:hover {
+            background-color: #e7dbdb;
+            color: rgb(15, 15, 15);
+            border: 2px solid rgb(117, 114, 114);
+        }
+    }
+}
+.addCartBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0%;
+    color: aliceblue;
+    /* gap: 15px; */
+    p{
+        color: aliceblue;
+        font-weight: lighter;
+        font-size: 13px;
+    }
+}
+.cartAddBtn{
+    width: 50px;
+    height: 50px;
+    color:whitesmoke;
+    background-color: transparent;
+    border: none;
+}
+
+
+@media(min-width:1024px) and (max-width: 1200px){
+    .trendingProdsPart{
+        flex-wrap: wrap;
+    }
+    .trendingBoxHeader{
+        height: auto;
+    }
+}
+
+@media(min-width:768px) and (max-width: 1024px){
+    .trendingProdsPart{
+        flex-wrap: wrap;
+    }
+    .trendingBoxHeader{
+        height: auto;
+    }
+    .trendingBtns{
+        gap: 1px;
+    }
+    .trendingTitle{
+        p{
+            font-size: 25px;
+        }
+    }
+    .mainTrendingProd{
+        height: 300px;
+        width: 220px;
+    }
+}
+
+@media(min-width:552px) and (max-width: 768px){
+    .trendingProdsPart{
+        flex-wrap: wrap;
+    }
+    .trendingBoxHeader{
+        height: auto;
+        gap: 17px;
+    }
+    .trendingBoxHeader{
+        flex-direction: column;
+    }
+    .trendingTitle{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(min-width:332px) and (max-width: 552px){
+    .trendingProdsPart{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .trendingBoxHeader{
+        height: auto;
+        gap: 17px;
+    }
+    .trendingBoxHeader{
+        flex-direction: column;
+    }
+    .trendingTitle{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 26px;
+        }
+    }
+    .mainTrendingProd{
+        width: 177px;
+        height: 260px;
+    }
+    .infoPart{
+        gap: 0px;
+        padding: 0 7px;
+    }
+    .cartAddBtn{
+        width: 38px;
+        height: 30px;
+    }
+}

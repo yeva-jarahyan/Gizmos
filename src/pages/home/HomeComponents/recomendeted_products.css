@@ -1,0 +1,221 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mainRecProductsBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 25px; */
+    padding: 15px;
+    &:hover .mainRecProduct{
+        filter: blur(3px);
+        &:hover{
+            filter: blur(0px);
+            scale: 1.04;
+            border-color: white;
+            box-shadow: 0 0 60px rgba(255, 255, 255, 0.185), inset 0 0 120px rgb(0, 0, 0);
+        }
+    }
+}
+.addCartBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0%;
+    color: aliceblue;
+    padding: 0;
+    /* gap: 15px; */
+    p{
+        color: aliceblue;
+        font-weight: lighter;
+        font-size: 13px;
+    }
+}
+.cartAddBtn{
+    width: 50px;
+    height: 50px;
+    color:whitesmoke;
+    background-color: transparent;
+    border: none;
+}
+.smth{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+a{
+    text-decoration: none;
+}
+.mainRecProduct{
+    width: 250px;
+    height: auto;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    background-color: #1f1f1f;
+    border-radius: 24px;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 2px solid transparent;
+    border-bottom: 2px solid rgb(99, 98, 98);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.692), inset 0 0 120px rgb(0, 0, 0);
+    transition: .4s;
+}
+
+.recImgPart{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: .4s;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.recInfoPart{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    padding: 10px;
+    /* gap: 5px; */
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+        color: aliceblue;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
+    p {
+        color: aliceblue;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+
+    span {
+        color: aliceblue;
+        font-size: 17px;
+        font-weight: lighter;
+    }
+}
+.mainRecProduct:hover.cartAddBox{
+   top: 80%;
+   background-color: blue;
+}
+.recomendedTextBox{
+    width: 100%;
+    height: auto;
+    /* padding: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-weight: lighter;
+        font-size: 35px;
+        color: aliceblue;
+    }
+}
+.recomendedProdsBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+@media(min-width:1200px){
+    .recomendedProdsBox{
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width:1024px) and (max-width: 1200px){
+    .recomendedProdsBox{
+        flex-wrap: wrap;
+    }
+    .mainRecProduct{
+        width: 210px;
+    }
+    .recImgPart{
+        height: 150px;
+    }
+}
+
+@media(min-width:768px) and (max-width: 1024px){
+    .recomendedProdsBox{
+        flex-wrap: wrap;
+    }
+    .mainRecProduct{
+        width: 210px;
+    }
+    .recImgPart{
+        height: 150px;
+    }
+}
+
+@media(min-width:552px) and (max-width: 768px){
+    .recomendedProdsBox{
+        flex-wrap: wrap;
+    }
+    .mainRecProduct{
+        width: 210px;
+    }
+    .recImgPart{
+        height: 150px;
+    }
+}
+
+@media(min-width:332px) and (max-width: 552px){
+    .recomendedProdsBox{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .recImgPart{
+        height: 150px;
+    }
+    .recomendedTextBox p{
+        font-size: 27px;
+    }
+    .mainRecProduct{
+        width: 170px;
+    }
+    .cartAddBtn{
+        width: 20px;
+        height: 20px;
+    }
+    .recInfoPart{
+        padding: 0 10px;
+    }
+    .smth{
+        span{
+            font-size: 14px;
+        }
+        h2{
+            font-size: 17px;
+        }
+    }
+    
+}

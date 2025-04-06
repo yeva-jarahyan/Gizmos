@@ -1,0 +1,227 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top_products_box {
+    width: 100%;
+    height: auto;
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: column;
+    padding: 0 0 50px 0;
+
+    &:hover .mainProduct {
+        filter: blur(3px);
+
+        &:hover {
+            transform: translateY(-5px);
+            border-color: white;
+            filter: blur(0px);
+        }
+    }
+}
+
+.mainProduct {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: #1f1f1f;
+    border: 2px solid transparent;
+    border-bottom: 2px solid rgb(99, 98, 98);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.692), inset 0 0 120px rgb(0, 0, 0);
+    transition: .4s;
+    &:hover{
+        .cartAddBox{
+            display: flex;
+        }
+    }
+}
+
+.imgPart {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    padding: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+
+    &>.mySwiper {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.addCartBox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0%;
+    /* gap: 15px; */
+    p{
+        color: aliceblue;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+}
+.cartAddBtn{
+    width: 50px;
+    height: 50px;
+    color:whitesmoke;
+    background-color: transparent;
+    border: none;
+}
+
+.infoPart {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    gap: 5px;
+    justify-content: center;
+    flex-direction: column;
+
+    h3 {
+        color: aliceblue;
+        font-weight: lighter;
+        font-size: 17px;
+    }
+
+    p {
+        color: aliceblue;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+
+    span {
+        color: aliceblue;
+        font-weight: lighter;
+    }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 28px!important;
+    color: rgb(197, 191, 191);
+}
+
+.top_product_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: aliceblue;
+        font-weight: lighter;
+        font-size: 40px
+    }
+}
+
+.allTopProducts {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+@media(min-width:1024px) and (max-width: 1200px){
+    .allTopProducts{
+        flex-wrap: wrap;
+    }
+    .mainProduct{
+        width: 260px;
+        height: 360px;
+    }
+}
+@media(min-width:768px) and (max-width: 1024px){
+    .allTopProducts{
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+    .mainProduct{
+        width: 240px;
+        height: 340px;
+    }
+    .infoPart{
+        height: 75px;
+    }
+}
+@media(min-width:552px) and (max-width: 768px){
+    .allTopProducts{
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+    .mainProduct{
+        width: 220px;
+        height: 320px;
+    }
+    .infoPart{
+        height: 75px;
+    }
+    .top_product_title{
+        height: auto;
+        p{
+            font-size: 30px;
+        }
+    }
+}
+
+@media(min-width:332px) and (max-width: 552px){
+    .allTopProducts{
+        flex-wrap: wrap;
+        gap:15px;
+    }
+    .mainProduct{
+        width: 160px;
+        height: auto;
+        gap: 0px;
+        padding: 0px;
+    }
+    .infoPart{
+        height: auto;
+        padding: 7px;
+        h3{
+            font-size: 14px;
+        }
+    }
+    .top_product_title{
+        height: auto;
+        p{
+            font-size: 30px;
+        }
+    }
+    .imgPart{
+        height: 100px;
+        width: 150px;
+    }
+    .addCartBox p{
+        font-size: 12px;
+    }
+}

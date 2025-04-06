@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.AllHistoryPart{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.historytext{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #141414;
+}
+.historyImages{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    background-color: #141414;
+    justify-content: center;
+    gap: 50px;
+}
+.historyImg{
+    width: 650px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #141414;
+    justify-content: center;
+    flex-direction: column;
+}
+.hisImgPart{
+    width: 100%;
+    height: 350px;
+    border-radius: 25px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.hisInfoPart{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: start;
+    object-fit: cover;
+    flex-direction: column;
+    gap: 15px;
+    h3{
+        font-weight: lighter;
+        font-size: 28px;    
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        color: aliceblue;
+    }
+    p{
+        font-weight: lighter;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        color: rgb(188, 190, 192);
+    }
+}
+.histotyTitle{
+    width: 350px;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        color: aliceblue;
+        font-size: 55px;
+        font-weight: lighter;
+    }
+}
+.historyText{
+    width: 800px;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    p{
+        color: aliceblue;
+        font-weight: lighter;
+    }
+}
+@media(min-width: 1200px){
+    
+    .historyImg{
+        width: 500px;
+    }
+    
+    .histotyTitle{
+        width: 300px;
+        height: 100%;
+        padding: 5px;
+        h1{
+            color: aliceblue;
+            font-size: 40px;
+            font-weight: lighter;
+        }
+    }
+    
+}
+@media (min-width: 1024px) and (max-width: 1200px){
+    .histotyTitle{
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        h1{
+            color: aliceblue;
+            font-size: 38px;
+            font-weight: lighter;
+        }
+    }
+    .historyText{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        p{
+            color: rgb(179, 182, 185);
+            font-weight: lighter;
+            font-size: 17px;
+        }
+    }
+    .historyImages{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        background-color: #141414;
+        justify-content: center;
+        padding: 25px;
+        gap: 50px;
+    }
+    .historyImg{
+        width: 450px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        background-color: #141414;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .historytext {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        gap: 15px;
+        p{
+            color: rgb(179, 182, 185);
+            font-weight: lighter;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .histotyTitle{
+        width: 200px;
+        h1{
+            font-size: 32px;
+        }
+    }
+    .historyText{
+        width: 600px;
+        p{
+            color: rgb(179, 182, 185);
+            font-weight: lighter;
+            font-size: 16px;
+        }
+    }
+    .historyImages{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        background-color: #141414;
+        justify-content: center;
+        padding: 25px;
+        gap: 50px;
+    }
+    .historyImg{
+        width: 450px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        background-color: #141414;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .hisImgPart{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 552px) and (max-width: 768px){
+    .histotyTitle{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 30px;
+        }
+    }
+    .historyText{
+        width: 100%;
+        p{
+            color: rgb(179, 182, 185);
+            font-weight: lighter;
+            font-size: 14px;
+        }
+    }
+    .historyImages{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        background-color: #141414;
+        justify-content: center;
+        padding: 25px;
+        gap: 50px;
+    }
+    .historyImg{
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        background-color: #141414;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .hisImgPart{
+        width: 100%;
+        height: 100%;
+    }
+    .historytext {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        gap: 15px;
+        p{
+            color: rgb(179, 182, 185);
+            font-weight: lighter;
+            font-size: 14px;
+        }
+    }
+}
+@media (min-width: 332px) and (max-width: 552px){
+    .histotyTitle{
+        width: 200px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    .historyText{
+        width: 100%;
+    }
+    .historytext {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        gap: 15px;
+        p{
+            color: rgb(179, 182, 185);
+            font-weight: lighter;
+            font-size: 14px;
+        }
+    }
+ 
+    .historyImages{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background-color: #141414;
+        justify-content: center;
+        flex-direction: column;
+        padding: 25px;
+        gap: 50px;
+    }
+    .historyImg{
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        background-color: #141414;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .hisImgPart{
+        width: 100%;
+        height: 100%;
+    }
+}
