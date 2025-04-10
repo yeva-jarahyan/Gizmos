@@ -606,4 +606,6 @@ body {
     .closeInp_btn{
         color: gray;
     } */
+    .iconLists>ul{
+display:flex;
 }
