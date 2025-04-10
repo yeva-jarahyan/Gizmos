@@ -224,4 +224,25 @@
     .addCartBox p{
         font-size: 12px;
     }
+    .top_products_box {
+    width: 100%;
+    height: auto;
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: column;
+    padding: 0 0 50px 0;
+
+    &:hover .mainProduct {
+        filter: blur(0px);
+
+        &:hover {
+            transform: translateY(-5px);
+            border-color: white;
+            filter: blur(0px);
+        }
+    }
+}
 }
