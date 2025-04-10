@@ -288,7 +288,7 @@
         flex-wrap: wrap;
         gap: 10px;
          &:hover .mainTrendingProd {
-        filter: blur(3px);
+        filter: blur(0px);
 
         &:hover {
             transform: translateY(-5px);
