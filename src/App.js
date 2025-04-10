@@ -9,7 +9,7 @@ import Cart from './pages/cart/cart';
 import Contact from './pages/contact/contact';
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename = "/">
             <Routes>
                 <Route path='/' element={<Layout />}>
                     <Route index element={<Home />}></Route>
