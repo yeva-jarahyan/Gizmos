@@ -17,7 +17,7 @@ const goToLocalCart = ((element) => {
         selectedArray.push(element)
         localStorage.setItem('selectedArr', JSON.stringify(selectedArray));
     }else{
-        alert('tenc apranq arden ka!!!!')
+        alert('there already is such an item')
     }
 
 })
