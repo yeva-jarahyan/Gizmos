@@ -287,6 +287,15 @@
     .trendingProdsPart{
         flex-wrap: wrap;
         gap: 10px;
+         &:hover .mainTrendingProd {
+        filter: blur(3px);
+
+        &:hover {
+            transform: translateY(-5px);
+            border-color: white;
+            filter: blur(0px);
+        }
+    }
     }
     .trendingBoxHeader{
         height: auto;
