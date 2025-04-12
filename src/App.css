@@ -106,10 +106,11 @@ body {
     justify-content: center;
     gap: 15px;
 
-    ul {
+    &>ul {
+        width:auto;
         display:flex;
-        align-items: center;
-        justify-content: center;
+        align-items:center;
+        justify-content:center;
         gap: 35px;
 
         li {
