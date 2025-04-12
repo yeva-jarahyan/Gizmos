@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Gizmos/static/css/main.1317f249.css",
+    "main.css": "/Gizmos/static/css/main.5f3ddbdd.css",
     "main.js": "/Gizmos/static/js/main.f37e8678.js",
     "static/js/136.0de01aba.chunk.js": "/Gizmos/static/js/136.0de01aba.chunk.js",
     "index.html": "/Gizmos/index.html",
-    "main.1317f249.css.map": "/Gizmos/static/css/main.1317f249.css.map",
+    "main.5f3ddbdd.css.map": "/Gizmos/static/css/main.5f3ddbdd.css.map",
     "main.f37e8678.js.map": "/Gizmos/static/js/main.f37e8678.js.map",
     "136.0de01aba.chunk.js.map": "/Gizmos/static/js/136.0de01aba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1317f249.css",
+    "static/css/main.5f3ddbdd.css",
     "static/js/main.f37e8678.js"
   ]
 }
